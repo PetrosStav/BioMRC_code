@@ -3,4 +3,8 @@ We introduce BIOMRC, a large-scale cloze-style biomedical MRC dataset. Care was 
 
 Dataset is available on: https://archive.org/details/biomrc_dataset
 
-The ASReaderTest and AOAReaderTest files use as input a preprocessed version of the dataset, which is not provided, as it can be produced by the original dataset.
+The ASReaderTest and AOAReaderTest files use as input a preprocessed version of the dataset, which is not provided, as it can be produced by the original dataset. Setting B can be enabled as a parameter and the code will perform the mapping from the Setting A version of the preprocessed dataset.
+
+The code SciBertReaderSum and SciBertReaderMax uses the original dataset and not a preprocessed one.
+
+For Setting B in SciBertReaderSum and SciBertReaderMax, just change the dataset input to the B version.
