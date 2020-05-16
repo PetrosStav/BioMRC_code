@@ -11,13 +11,17 @@ The ASReaderTest and AOAReaderTest files use as input a preprocessed version of 
 
 Example of preprocessing (Setting A):
 
->Abstract: ['single-agent', 'activity', 'for', 'entity8253', ... , 'hormonal', 'or', 'single-agent', 'entity4349', 'therapy']
->
->Title: ['no', 'synergistic', 'activity', 'of', 'entity1259', 'and', 'xxxx', 'in', 'the', 'treatment', 'of', 'entity157']
->
->Entities List: ['entity1', 'entity632', 'entity137', 'entity440', 'entity8253', 'entity4349', 'entity5', 'entity1259', 'entity2262', 'entity4020', 'entity157', 'entity221', 'entity1851']
->
->Answer: 9
+Abstract: 
+> ['single-agent', 'activity', 'for', 'entity8253', ... , 'hormonal', 'or', 'single-agent', 'entity4349', 'therapy']
+
+Title: 
+> ['no', 'synergistic', 'activity', 'of', 'entity1259', 'and', 'xxxx', 'in', 'the', 'treatment', 'of', 'entity157']
+
+Entities List: 
+> ['entity1', 'entity632', 'entity137', 'entity440', 'entity8253', 'entity4349', 'entity5', 'entity1259', 'entity2262', 'entity4020', 'entity157', 'entity221', 'entity1851']
+
+Answer:
+> 9
 
 You can use your own tokenization/preprocessing functions to achieve the above format, so that the code can run, or you can implement/tweak the code to run with your own format.
 
