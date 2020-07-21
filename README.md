@@ -5,7 +5,19 @@ BIOMRC Paper Preprint: https://arxiv.org/abs/2005.06376
 Abstract:
 We introduce BIOMRC, a large-scale cloze-style biomedical MRC dataset. Care was taken to reduce noise, compared to the previous BIOREAD dataset of Pappas et al. (2018). Experiments show that simple heuristics do not perform well on the new dataset, and that two neural MRC models  that had been tested on BIOREAD perform much better on BIOMRC, indicating that the new dataset is indeed less noisy or at least that its task is more feasible. Non-expert human performance is also higher on the new dataset compared to BIOREAD, and biomedical experts perform even better.
 
-Dataset is available on: https://archive.org/details/biomrc_dataset
+Dataset is available on: 
+
+Archive: https://archive.org/details/biomrc_dataset
+
+Hugginface NLP: https://huggingface.co/nlp/viewer/?dataset=biomrc&config=biomrc_large_A
+
+You can download it using the following code (selecting the setting you want to use in the second parameter):
+
+```
+!pip install nlp
+from nlp import load_dataset
+dataset = load_dataset('biomrc', 'biomrc_large_A')
+```
 
 The ASReaderTest and AOAReaderTest files use as input a preprocessed version of the dataset, which is not provided, but can be created from the original dataset and saved in the same format as a list of tokens instead of text of the abstracts, titles etc.
 
